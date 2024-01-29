@@ -1,0 +1,25 @@
+{
+  "name": "grpc-stt-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pb:gen": "powershell -ExecutionPolicy unrestricted ./scripts/gen.ps1 speechToText"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/speech": "^6.1.0",
+    "@grpc/grpc-js": "^1.9.13",
+    "google-protobuf": "^3.21.2",
+    "mic": "^2.1.2",
+    "node-microphone": "^0.1.6",
+    "node-record-lpcm16": "^1.0.1"
+  },
+  "devDependencies": {
+    "grpc-tools": "1.11",
+    "nodemon": "^3.0.2"
+  }
+}

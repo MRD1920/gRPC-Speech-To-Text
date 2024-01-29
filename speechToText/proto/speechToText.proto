@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package speechtotextPackage;
+
+message SpeechRequest{
+    bytes audio_data = 1;
+}
+
+message TextResponse{
+    string text_response = 1;
+    bool is_final = 2;
+}
+
+service SttService{
+    rpc SpeechToTextLocal (stream SpeechRequest) returns (stream TextResponse);
+}
