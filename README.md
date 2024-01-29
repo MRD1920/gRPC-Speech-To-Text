@@ -45,7 +45,3 @@ $ node client/client.js
 ## Contributing
 
 Contributions are welcome! Feel free to submit pull requests or open issues if you encounter any problems.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
